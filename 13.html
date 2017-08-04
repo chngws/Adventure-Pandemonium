@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="loadPage()">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>13.</h1>
+        <p>You put your head on the door and listen intently but hear nothing but silence, and wonder if Collins will be coming at all.</p>
+        <p>Do you try to pick open the door?</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("10.html")>Don't pick open the door</button><br><br>
+        <button type="button" onclick=changePage("14.html")>Try to pick open the door</button><br>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="checkOptions('garage'); addItem(' doll', true);">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>8.</h1>
+        <p>The doll is handwoven of cloth and cotton, is devoid of features except for two buttons for eyes, but one of the buttons is missing, leaving an empty socket. It is small enough to fit in your pocket which you keep it, maybe to return it to its owner later.</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("2.html")>Return to the front door and knock</button><br><br>
+        <button id="garage" type="button" onclick=changePage("6.html")>Go to the garage</button><br>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+
+</html>

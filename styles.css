@@ -1,0 +1,11 @@
+body {  background-color: black; }
+
+h1 { color: red; font-size: 250%; }
+
+h3 { color: red; font-size: 150%; }
+
+i { color: grey; font-size: 125%; }
+
+p { color: white; font-size: 125%; }
+
+#dead { color: red; font-size: 150%; font-style: italic ;}

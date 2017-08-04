@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="updateDict('garage'); checkOptions('hedge'); changeFear(1)">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>6.</h1>
+        <p>You follow the driveway to the garage door, it is an intimidating metal shutter, locked shut, and you see no other points of entry. As you were looking around, you noticed a trail of red stains seeping from below the garage door. Looking closer you realise that it is fresh blood! Increase one Fear point!</p>
+        <p>A nervous feeling creeps into you as you ponder what kind of inhabitants lie in the manor. However, staying out in the cold could be dangerous if the temperature drops drastically in the night. </p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("2.html")>Return to the front door and knock</button><br><br>
+        <button id="hedge" type="button" onclick=changePage("5.html")>Go to the hedge garden</button><br>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

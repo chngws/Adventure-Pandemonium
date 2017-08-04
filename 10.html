@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="checkOptions('window'); checkOptions('searchBelphegor'); loadPage()">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>10.</h1>
+        <p>You decide to...</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("9.html")>Rest until Collins arrive</button><br><br>
+        <button id="window" type="button" onclick=changePage("11.html")>Look out the window</button><br><br>
+        <button id="searchBelphegor" type="button" onclick=changePage("12.html")>Search the room</button><br><br>
+        <button type="button" onclick=changePage("13.html")>Check the door</button><br>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+
+</html>
