@@ -4,7 +4,13 @@ function init() {
         'garage' : false,
         'hedge' : false,
         'window' : false,
-        'searchBelphegor' : false
+        'Belphegor' : false,
+        'janitor' : false,
+        'Asmodeus' : false,
+        'Sathanus' : false,
+        'Beelzebub' : false,
+        'Mammon' : false,
+        'Shaitan' : false
     };
     var itemsList = [];
     localStorage.setItem("fearPoints", 0);
@@ -47,6 +53,14 @@ function checkOptions(option){
     var boolsDict = JSON.parse(localStorage.getItem("boolsDict"));
     if (boolsDict[option]) {    // If boolean is true; disable option
         document.getElementById(option).disabled = true;
+    }
+}
+
+// Checks if player has certain items for certain choices
+function checkItems(item){
+    var itemsList = JSON.parse(localStorage.getItem("itemsList"));
+    if (!itemsList.includes(item)) {
+        document.getElementById(item).disabled = true;
     }
 }
 

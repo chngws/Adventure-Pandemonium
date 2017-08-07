@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body onload="checkItems('Red Key'); loadPage()">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>17.</h1>
+        <p>The Asmodeus room is locked, unless you have the Red Key you cannot open it.</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("15.html")>Return to East Wing</button><br><br>
+        <button id="Red Key" type="button" onclick=changePage("17.html")>You possess the Red Key and wish to unlock the Asmodeus room</button><br>
+    </div>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+
+</html>

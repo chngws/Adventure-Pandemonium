@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
-<body onload="loadPage()">
+<body onload="checkOptions('janitor'); checkOptions('Sathanus'); checkOptions('Asmodeus'); loadPage()">
 
     <div class="status">
         <h3>Status</h3>
@@ -21,10 +21,11 @@
     </div>
     
     <div class="choices">
-        <button type="button" onclick=changePage("15.html")>Go to the room named 'Sathanus'</button><br><br>
-        <button type="button" onclick=changePage("15.html")>Go to the room named 'Asmodeus'</button><br><br>
-        <button type="button" onclick=changePage("15.html")>Go to the unnamed room</button><br><br>
-        <button type="button" onclick=changePage("15.html")>Return to your room, 'Belphegor'</button><br>
+        <button id="Sathanus" type="button" onclick=changePage("16.html")>Go to the room named 'Sathanus'</button><br><br>
+        <button id="Asmodeus" type="button" onclick=changePage("17.html")>Go to the room named 'Asmodeus'</button><br><br>
+        <button id="janitor" type="button" onclick=changePage("18.html")>Go to the unnamed room</button><br><br>
+        <button type="button" onclick=changePage("19.html")>Return to your room, 'Belphegor' to rest for the night</button><br><br>
+        <button type="button" onclick=changePage("20.html")>Leave the East Wing</button><br>
     </div>
 
     <script type="text/javascript" src="../js/script.js"></script>

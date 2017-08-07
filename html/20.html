@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body onload="loadPage()">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>20.</h1>
+        <p>The central hall acts as a connector between the East and West wings, and a staircase to the first floor. It is deathly silent and poorly illuminated by a brass lantern in the middle of the hall.</p>
+        <p>Where do you wish to go?</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("15.html")>Go to the East Wing</button><br><br>
+        <button type="button" onclick=changePage("25.html")>Go to the West Wing</button><br><br>
+        <button type="button" onclick=changePage("20.html")>Go downstairs</button><br>
+    </div>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+
+</html>
