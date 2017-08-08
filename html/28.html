@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body onload="checkItems('garlic'); changeFear(2)">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>28.</h1>
+        <p>"Lost? You do not work for the Master, you are supper!" Delano smiles and reveals his fangs. The Vampire's eyes transfix on yours and you feel immobilized, unable to shift your gaze away from his. Mortal fear grips you as he walks across the room towards you. Add two Fear points.</p>
+    </div>
+    
+    <div class="choices">
+        <button id="garlic" type="button" onclick=changePage("29.html")>If you have garlic</button><br><br>
+        <button type="button" onclick=changePage("30.html")>If you do not have garlic with you</button><br>
+    </div>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+
+</html>

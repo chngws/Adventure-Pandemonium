@@ -12,6 +12,7 @@ function init() {
         'Mammon' : false,
         'Shaitan' : false
     };
+
     var itemsList = [];
     localStorage.setItem("fearPoints", 0);
     localStorage.setItem("itemsList", JSON.stringify(itemsList));
@@ -86,10 +87,28 @@ function changeFear(points){
     var fearPoints = localStorage.getItem("fearPoints");
     var newfearPoints = parseInt(fearPoints) + parseInt(points);
     if (newfearPoints >= 10) {
-        alert("You have died by fright!");
-        location.replace("main.html");
+        location.replace("fearDeath.html");
     }
     localStorage.setItem("fearPoints", newfearPoints);
     console.log("fearPoints changed to " + newfearPoints);
     loadPage();
+}
+
+// Simulate a die roll and see present options based on success/fail
+function rollDice(){
+    var res = getRandomIntInclusive(1, 6);
+    console.log(res);
+    if (res > 3){
+        document.getElementById('success').disabled = false;    
+    } else {
+        document.getElementById('fail').disabled = false;
+    }
+    document.getElementById('rollDie').disabled = true;
+    loadPage();
+}
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
