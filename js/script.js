@@ -10,7 +10,10 @@ function init() {
         'Sathanus' : false,
         'Beelzebub' : false,
         'Mammon' : false,
-        'Shaitan' : false
+        'Shaitan' : false,
+        'distillation' : false,
+        'glassCabinet' : false,
+        'bookshelves' : false
     };
 
     var itemsList = [];

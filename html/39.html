@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pandemonium</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body onload="updateDict('bookshelves'); changeFear(1)">
+
+    <div class="status">
+        <h3>Status</h3>
+        <p id="inventory"></p>
+        <p id="fearPoints"></p>
+    </div>
+
+    <div class="content">
+        <h1>39.</h1>
+        <p>The bookshelves are dusty and disorganized, but flipping through a few of its musty tomes they seem to be about ancient alchemy and transmutations. As you are browsing, a small book bound in strange material catches your eye. When you pick it up its familiar texture makes you realize it is bound in human skin! Add one fear point for this horrific realization.</p>
+        <p>The cover is covered mysterious symbols you do not recognize, written in blood, and depicts a eye surrounded with tentacles around it. Do you wish to open the book?</p>
+    </div>
+    
+    <div class="choices">
+        <button type="button" onclick=changePage("43.html")>Open the book</button><br><br>
+        <button type="button" onclick=changePage("34.html")>Investigate something else</button><br>
+    </div>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+
+</html>

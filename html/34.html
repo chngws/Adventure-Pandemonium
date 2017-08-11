@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
-<body onload="loadPage()">
+<body onload="checkOptions('distillation'); checkOptions('glassCabinet'); checkOptions('bookshelves'); loadPage()">
 
     <div class="status">
         <h3>Status</h3>
@@ -16,11 +16,14 @@
 
     <div class="content">
         <h1>34.</h1>
-        <p>Unused page</p>
+        <p>What do you wish to investigate first?</p>
     </div>
     
     <div class="choices">
-        <button type="button" onclick=changePage("25.html")>Return to West Wing</button><br>
+        <button id="distillation" type="button" onclick=changePage("37.html")>The distillation apparatus</button><br><br>
+        <button id="glassCabinet" type="button" onclick=changePage("38.html")>The glass cabinet</button><br><br>
+        <button id="bookshelves" type="button" onclick=changePage("39.html")>The bookshelves</button><br><br>
+        <button type="button" onclick=changePage("25.html")>Leave the room and return to West Wing</button><br>
     </div>
 
     <script type="text/javascript" src="../js/script.js"></script>
